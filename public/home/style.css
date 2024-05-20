@@ -17,13 +17,18 @@
     padding: 0;
 }
 
+html{
+    overflow: hidden;
 
+}
 body {
     overflow: hidden;
     font-family: sans-serif;
+    position: fixed;
 }
 
 .main-background {
+    overflow: hidden;
     height: 100vh;
     width: 100vw;
     background-color: var(--background);
@@ -78,7 +83,7 @@ body {
     flex-wrap: wrap;
     border-radius: 20px;
     align-items: center;
-    
+
 }
 
 
@@ -98,19 +103,19 @@ body {
 }
 
 .text-username {
-    margin: auto 0px ;
+    margin: auto 0px;
     font-weight: 700;
     color: var(--on-surface);
 }
 
-.container-links{
+.container-links {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.container-links a{
+.container-links a {
     width: 20rem;
     height: 50px;
     background-color: var(--surface);
@@ -118,9 +123,30 @@ body {
     border-radius: 20px;
     text-align: center;
     /* padding: 10px; */
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     color: var(--on-surface);
     text-decoration: none;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .bg-box2 {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        top: 30%;
+        left: 15%;
+        background-color: var(--primary-variant);
+        transform: rotate(-23deg);
+        border-radius: 40px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .container-card{
+        width:fit-content;
+        flex-direction: column;
+    }
 }
