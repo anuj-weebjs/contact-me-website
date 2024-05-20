@@ -83,7 +83,10 @@ body {
     flex-wrap: wrap;
     border-radius: 20px;
     align-items: center;
-
+    transition: all ease 0.5s;
+}
+.container-card:hover{
+    transform: scale(105%);
 }
 
 
@@ -128,6 +131,11 @@ body {
     align-items: center;
     color: var(--on-surface);
     text-decoration: none;
+    transition: all ease 0.5s;
+}
+.container-links a:hover{
+    transform: translateX(10px);
+    transform: translateY(-10px);
 }
 
 
