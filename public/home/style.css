@@ -1,0 +1,126 @@
+:root {
+    --primary: rgba(187, 134, 252, 1);
+    --primary-variant: rgba(55, 0, 179, 1);
+    --secondary: rgba(3, 218, 198, 1);
+    --background: rgba(18, 18, 18, 1);
+    --surface: rgba(18, 18, 18, 0.8);
+    --error: rgba(207, 102, 121, 1);
+    --on-primary: rgba(0, 0, 0, 1);
+    --on-secondary: rgba(0, 0, 0, 1);
+    --on-background: rgba(111, 111, 111, 0.1);
+    --on-surface: rgba(255, 255, 255, 1);
+    --on-error: rgba(0, 0, 0, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.main-background {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bg-box1 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 50%;
+    left: 60%;
+    background-color: var(--primary);
+    transform: rotate(23deg);
+    border-radius: 40px;
+}
+
+.bg-box2 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 30%;
+    left: 25%;
+    background-color: var(--primary-variant);
+    transform: rotate(-23deg);
+    border-radius: 40px;
+}
+
+.bg-box3 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 18%;
+    left: 43%;
+    background-color: var(--secondary);
+    transform: rotate(23deg);
+    border-radius: 40px;
+}
+
+.container-card {
+    /* box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); */
+    box-shadow: 0 15px 25px;
+    backdrop-filter: blur(10px);
+    background-color: var(--on-background);
+    /* width: 60%; */
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    align-items: center;
+    
+}
+
+
+.container-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    padding: 25px 0px;
+}
+
+.image-pfp {
+    width: 60%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.text-username {
+    margin: auto 0px ;
+    font-weight: 700;
+    color: var(--on-surface);
+}
+
+.container-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-links a{
+    width: 20rem;
+    height: 50px;
+    background-color: var(--surface);
+    margin: 10px 50px;
+    border-radius: 20px;
+    text-align: center;
+    /* padding: 10px; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--on-surface);
+    text-decoration: none;
+}
