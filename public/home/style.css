@@ -137,6 +137,13 @@ body {
     transform: translateX(10px);
     transform: translateY(-10px);
 }
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+    color: var(--on-surface);
+}
 
 
 @media only screen and (max-width: 1200px) {
