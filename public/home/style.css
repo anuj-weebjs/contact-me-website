@@ -165,3 +165,38 @@ footer{
         flex-direction: column;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    .bg-box1 {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        top: 50%;
+        left: 50%;
+        background-color: var(--primary);
+        transform: rotate(23deg);
+        border-radius: 40px;
+    }
+    
+    .bg-box2 {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        top: 30%;
+        left: 10%;
+        background-color: var(--primary-variant);
+        transform: rotate(-23deg);
+        border-radius: 40px;
+    }
+    
+    .bg-box3 {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        top: 15%;
+        left: 43%;
+        background-color: var(--secondary);
+        transform: rotate(23deg);
+        border-radius: 40px;
+    }
+}
