@@ -17,14 +17,30 @@
     padding: 0;
 }
 
-html{
+html {
     overflow: hidden;
 
 }
+
 body {
     overflow: hidden;
     font-family: sans-serif;
     position: fixed;
+}
+
+
+.loading-screen {
+    z-index: 100;
+    transition: all ease 1s;
+}
+
+.visible {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    backdrop-filter: blur(100px);
+    top: 0;
+    z-index: 100;
 }
 
 .main-background {
@@ -85,7 +101,8 @@ body {
     align-items: center;
     transition: all ease 0.5s;
 }
-.container-card:hover{
+
+.container-card:hover {
     transform: scale(105%);
 }
 
@@ -125,7 +142,6 @@ body {
     margin: 10px 50px;
     border-radius: 20px;
     text-align: center;
-    /* padding: 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,11 +149,13 @@ body {
     text-decoration: none;
     transition: all ease 0.5s;
 }
-.container-links a:hover{
+
+.container-links a:hover {
     transform: translateX(10px);
     transform: translateY(-10px);
 }
-footer{
+
+footer {
     position: absolute;
     bottom: 0;
     width: 100vw;
@@ -160,8 +178,8 @@ footer{
 }
 
 @media only screen and (max-width: 900px) {
-    .container-card{
-        width:fit-content;
+    .container-card {
+        width: fit-content;
         flex-direction: column;
     }
 }
@@ -177,7 +195,7 @@ footer{
         transform: rotate(23deg);
         border-radius: 40px;
     }
-    
+
     .bg-box2 {
         position: absolute;
         width: 250px;
@@ -188,7 +206,7 @@ footer{
         transform: rotate(-23deg);
         border-radius: 40px;
     }
-    
+
     .bg-box3 {
         position: absolute;
         width: 250px;
