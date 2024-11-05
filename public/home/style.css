@@ -22,6 +22,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -182,6 +183,7 @@ body {
     width: 60%;
     border-radius: 50%;
     margin-bottom: 15px;
+    border: 1px solid var(--primary);
 }
 
 .text-username {
