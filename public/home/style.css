@@ -183,13 +183,12 @@ body {
     width: 60%;
     border-radius: 50%;
     margin-bottom: 15px;
-    border: 1px solid var(--primary);
 }
 
 .text-username {
     margin: auto 0px;
     font-weight: 700;
-    color: var(--primary);
+    color: var(--on-surface);
 }
 
 .container-links {
@@ -201,7 +200,7 @@ body {
 }
 
 .container-links a {
-    color: var(--primary);
+    color: var(--on-surface);
     width: 20rem;
     height: 50px;
     background-color: var(--surface);
@@ -222,7 +221,7 @@ body {
 
 .floating-down-arrow {
     text-decoration: none;
-    color: var(--primary);
+    color: var(--on-surface);
     text-align: center;
     display: flex;
     align-items: center;
@@ -271,5 +270,5 @@ footer {
     bottom: 0;
     width: 100vw;
     text-align: center;
-    color: var(--primary);
+    color: var(--on-surface);
 }
